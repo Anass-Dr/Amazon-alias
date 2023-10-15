@@ -452,7 +452,6 @@ input[type="checkbox"]:checked ~ .checkmark {
   justify-content: space-around;
   position: relative;
   overflow-x: scroll;
-  width: calc(100vw - 20px);
   scrollbar-width: none;
 }
 #products_main .radio_options::-webkit-scrollbar {
@@ -467,6 +466,7 @@ input[type="checkbox"]:checked ~ .checkmark {
   background-color: #fff;
   padding-inline: 15px;
   cursor: pointer;
+  display: none;
 }
 #products_main .radio_options label {
   min-width: 123px;
@@ -1064,10 +1064,14 @@ footer p {
   }
   #products_main .radio_options {
     justify-content: flex-start;
+    width: calc(100vw - 20px);
     gap: 0.5rem 1rem;
   }
   #products_main .radio_options label {
     font-size: 16px;
+  }
+  #products_main .radio_options .all_filters {
+    display: block;
   }
   #products_main #products {
     margin-top: 0;
