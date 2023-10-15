@@ -469,6 +469,9 @@ input[type="checkbox"]:checked ~ .checkmark {
   display: none;
 }
 #products_main .radio_options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   min-width: 125px;
   color: var(--slate-400);
   font-size: 18px;
