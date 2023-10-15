@@ -14,332 +14,415 @@
     <title>Amazon by Aziz</title>
   </head>
   <body>
-    <nav>
-      <div id="brand">
-        <img src="./assets/Amazon.png" alt="amazon_icon" />
-      </div>
-      <div id="search">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Cherchez un produit, une marque ou catégorie..."
-        />
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">Sign In</a>
-        </li>
-        <hr />
-        <li>
-          <a href="#">Create account</a>
-        </li>
-        <li id="nav_country">
-          <img src="./assets/Morocco.png" alt="morocco_logo" />
-          <span>MAR</span>
-        </li>
-        <li id="nav_cart">
-          <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
-          <span>5</span>
-        </li>
-      </ul>
-    </nav>
-    <main id="product_details">
-      <section id="header">
-        <div class="album">
-          <div class="product_img"></div>
-          <div class="album_imgs">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <div id="brand">
+          <a href="./index.html">
+            <img src="./assets/Amazon.png" alt="amazon_icon" />
+          </a>
         </div>
-        <div class="info">
-          <h1 class="info_h1">
-            My Product Name, LX-21 Im try to to write samething
-          </h1>
-          <div class="info_star">
-            <span class="product_card_star">
-              <img src="./assets/Star.png" alt="star_icon" />
-              5.0</span
-            >
-            <hr />
-            <span class="product_card_sold">Sold 120</span>
-          </div>
-          <p class="info_p">
-            Product Name Taking this place Hello hello Product name Taking Hello
-            hello Product Name Taking this place Hello hello
-          </p>
-          <div class="info_price">
-            <span>$1960</span>
-            <span>290</span>
-          </div>
-          <h4>Size</h4>
-          <div class="info_size">
-            <span>XXL</span>
-            <span>XL</span>
-            <span>L</span>
-            <span>M</span>
-          </div>
-          <h4>Color</h4>
-          <div class="info_color">
-            <span></span><span></span><span></span><span></span>
-          </div>
+        <div id="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Cherchez un produit, une marque ou catégorie..."
+          />
         </div>
-        <div class="shipping">
-          <div>
-            <h5>Ship to</h5>
-            <span>Morocco</span>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#">Create account</a>
+          </li>
+          <li id="nav_country">
+            <img src="./assets/Morocco.png" alt="morocco_logo" />
+            <span>MAR</span>
+          </li>
+          <li id="nav_cart">
+            <a href="./cart.html">
+              <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
+              <span>5</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main id="product_details">
+        <section id="header">
+          <div class="album">
+            <div class="product_img"></div>
+            <div class="album_imgs">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-          <div>
-            <h5>Shipping</h5>
-            <p>From China to Morocco by amazon Delivery in May 29</p>
-          </div>
-          <div>
-            <h5>Shipping</h5>
-            <p>
-              20 t China to Morocco by amazon Delivery 5% off la pfslje en
-              fdluer
+          <div class="info">
+            <h1 class="info_h1">
+              My Product Name, LX-21 Im try to to write samething
+            </h1>
+            <div class="info_star">
+              <span class="product_card_star">
+                <img src="./assets/Star.png" alt="star_icon" />
+                5.0</span
+              >
+              <hr />
+              <span class="product_card_sold">Sold 120</span>
+            </div>
+            <p class="info_p">
+              Product Name Taking this place Hello hello Product name Taking
+              Hello hello Product Name Taking this place Hello hello
             </p>
-            <div class="shipping_quantity">
-              <span><b>-</b></span>
-              <p>1</p>
-              <span><b>+</b></span>
+            <div class="info_price">
+              <span>$1960</span>
+              <span>
+                <i class="fa-regular fa-heart"></i>
+                290</span
+              >
+            </div>
+            <h4>Size</h4>
+            <div class="info_size">
+              <div class="item_clickable">
+                <input type="radio" name="size-option" />
+                <span>XXL</span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="size-option" checked />
+                <span>XL</span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="size-option" />
+                <span>L</span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="size-option" />
+                <span>M</span>
+              </div>
+            </div>
+            <h4>Color</h4>
+            <div class="info_color">
+              <div class="item_clickable">
+                <input type="radio" name="color-option" checked />
+                <span></span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="color-option" />
+                <span></span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="color-option" />
+                <span></span>
+              </div>
+              <div class="item_clickable">
+                <input type="radio" name="color-option" />
+                <span></span>
+              </div>
             </div>
           </div>
-          <div>
-            <button class="btn">Add to cart</button>
-            <button class="btn btn-outline">Easy Here</button>
-            <div class="links">
-              <span>Chat</span>
-              <span>Share</span>
+          <div class="shipping">
+            <div>
+              <h5>Ship to</h5>
+              <span>Morocco</span>
+            </div>
+            <div>
+              <h5>Shipping</h5>
+              <p>From China to Morocco by amazon Delivery in May 29</p>
+            </div>
+            <div>
+              <h5>Shipping</h5>
+              <p>
+                20 t China to Morocco by amazon Delivery 5% off la pfslje en
+                fdluer
+              </p>
+              <div class="shipping_quantity">
+                <span><b>-</b></span>
+                <p>1</p>
+                <span><b>+</b></span>
+              </div>
+            </div>
+            <div>
+              <button class="btn">Add to cart</button>
+              <button class="btn btn-outline">Easy Here</button>
+              <div class="links">
+                <span>
+                  <i class="fa-solid fa-comment-dots"></i>
+                  Chat</span
+                >
+                <span>
+                  <i class="fa-solid fa-share-nodes"></i>
+                  Share</span
+                >
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="description">
-        <h2>Description</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio
-          tortor, scelerisque lobortis metus at, volutpat suscipit libero. Ut ut
-          sapien elementum, rutrum velit ac, interdum arcu. Duis aliquet blandit
-          ullamcorper. Duis auctor ornare est, ut vehicula ex pellentesque ut.
-          Nullam elementum nec ligula vel vestibulum. Nunc at massa tempor,
-          porttitor erat sed, ullamcorper erat. Sed lobortis fermentum nunc vel
-          tincidunt. Morbi quam nisi, ornare fringilla facilisis nec.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio
-          tortor, scelerisque lobortis metus at, volutpat suscipit libero. Ut ut
-          sapien elementum, rutrum velit ac, interdum arcu. Duis aliquet blandit
-          ullamcorper. Duis auctor ornare est, ut vehicula ex pellentesque ut.
-          Nullam elementum nec ligula vel vestibulum. Nunc at massa tempor,
-          porttitor erat sed, ullamcorper erat. Sed lobortis fermentum nunc vel
-          tincidunt. Morbi quam nisi, ornare fringilla facilisis nec.
-        </p>
-        <div>
+        </section>
+        <section id="description">
+          <h2>Description</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             odio tortor, scelerisque lobortis metus at, volutpat suscipit
             libero. Ut ut sapien elementum, rutrum velit ac, interdum arcu. Duis
             aliquet blandit ullamcorper. Duis auctor ornare est, ut vehicula ex
             pellentesque ut. Nullam elementum nec ligula vel vestibulum. Nunc at
-            massa tempor, porttitor erat sed. ullamcorper erat. Sed lobortis
+            massa tempor, porttitor erat sed, ullamcorper erat. Sed lobortis
             fermentum nunc vel tincidunt. Morbi quam nisi, ornare fringilla
-            facilisis nec. ullamcorper erat. Sed lobortis fermentum nunc vel
-            tincidunt. Morbi quam nisi, ornare fringilla facilisis nec.
+            facilisis nec.
           </p>
-          <div class="img"></div>
-        </div>
-      </section>
-      <section id="review">
-        <h2>Review</h2>
-        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            odio tortor, scelerisque lobortis metus at, volutpat suscipit
+            libero. Ut ut sapien elementum, rutrum velit ac, interdum arcu. Duis
+            aliquet blandit ullamcorper. Duis auctor ornare est, ut vehicula ex
+            pellentesque ut. Nullam elementum nec ligula vel vestibulum. Nunc at
+            massa tempor, porttitor erat sed, ullamcorper erat. Sed lobortis
+            fermentum nunc vel tincidunt. Morbi quam nisi, ornare fringilla
+            facilisis nec.
+          </p>
           <div>
-            <div class="review_star_div">
-              <div class="stars_div">
-                <img src="./assets/Star.png" alt="star_icon" />
-                <img src="./assets/Star.png" alt="star_icon" />
-                <img src="./assets/Star.png" alt="star_icon" />
-                <img src="./assets/Star.png" alt="star_icon" />
-                <img src="./assets/Star.png" alt="star_icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              odio tortor, scelerisque lobortis metus at, volutpat suscipit
+              libero. Ut ut sapien elementum, rutrum velit ac, interdum arcu.
+              Duis aliquet blandit ullamcorper. Duis auctor ornare est, ut
+              vehicula ex pellentesque ut. Nullam elementum nec ligula vel
+              vestibulum. Nunc at massa tempor, porttitor erat sed. ullamcorper
+              erat. Sed lobortis fermentum nunc vel tincidunt. Morbi quam nisi,
+              ornare fringilla facilisis nec. ullamcorper erat. Sed lobortis
+              fermentum nunc vel tincidunt. Morbi quam nisi, ornare fringilla
+              facilisis nec.
+            </p>
+            <div class="img"></div>
+          </div>
+        </section>
+        <section id="review">
+          <h2>Review</h2>
+          <div class="container">
+            <div class="stars">
+              <div class="review_star_div">
+                <div class="stars_div">
+                  <img src="./assets/Star.png" alt="star_icon" />
+                  <img src="./assets/Star.png" alt="star_icon" />
+                  <img src="./assets/Star.png" alt="star_icon" />
+                  <img src="./assets/Star.png" alt="star_icon" />
+                  <img src="./assets/Star.png" alt="star_icon" />
+                </div>
+                <p>4.7 of 5.0</p>
               </div>
-              <p>4.7 of 5.0</p>
+              <p class="average_p">48 reviews average</p>
+              <div class="star_statis">
+                <span>5 star</span>
+                <div class="bar"></div>
+                <span>88%</span>
+              </div>
+              <div class="star_statis">
+                <span>4 star</span>
+                <div class="bar"></div>
+                <span>12%</span>
+              </div>
+              <div class="star_statis">
+                <span>3 star</span>
+                <div class="bar"></div>
+                <span>0%</span>
+              </div>
+              <div class="star_statis">
+                <span>2 star</span>
+                <div class="bar"></div>
+                <span>0%</span>
+              </div>
+              <div class="star_statis">
+                <span>1 star</span>
+                <div class="bar"></div>
+                <span>0%</span>
+              </div>
             </div>
-            <p class="average_p">48 reviews average</p>
-            <div class="star_statis">
-              <span>5 star</span>
-              <div class="bar"></div>
-              <span>88%</span>
-            </div>
-            <div class="star_statis">
-              <span>4 star</span>
-              <div class="bar"></div>
-              <span>12%</span>
-            </div>
-            <div class="star_statis">
-              <span>3 star</span>
-              <div class="bar"></div>
-              <span>0%</span>
-            </div>
-            <div class="star_statis">
-              <span>2 star</span>
-              <div class="bar"></div>
-              <span>0%</span>
-            </div>
-            <div class="star_statis">
-              <span>1 star</span>
-              <div class="bar"></div>
-              <span>0%</span>
+            <hr />
+            <div class="comments">
+              <div class="comment">
+                <div>
+                  <span class="profile"></span>
+                  <div>
+                    <h5>USER NAME</h5>
+                    <p class="profile_post">Size XL, CNOME DEVT</p>
+                  </div>
+                  <div class="comment_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="msg">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam odio tortor, scelerisque lobortis aliquet blandit
+                  ullamcorper.
+                </p>
+              </div>
+              <div class="comment">
+                <div>
+                  <span class="profile"></span>
+                  <div>
+                    <h5>USER NAME</h5>
+                    <p class="profile_post">Size XL, CNOME DEVT</p>
+                  </div>
+                  <div class="comment_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="msg">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam odio tortor, scelerisque lobortis aliquet blandit
+                  ullamcorper.
+                </p>
+              </div>
+              <div class="comment">
+                <div>
+                  <span class="profile"></span>
+                  <div>
+                    <h5>USER NAME</h5>
+                    <p class="profile_post">Size XL, CNOME DEVT</p>
+                  </div>
+                  <div class="comment_stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <p class="msg">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam odio tortor, scelerisque lobortis aliquet blandit
+                  ullamcorper.
+                </p>
+              </div>
             </div>
           </div>
-          <hr />
-          <div class="comments">
-            <div class="comment">
-              <div>
-                <span class="profile"></span>
-                <div>
-                  <h5>USER NAME</h5>
-                  <p class="profile_post">Size XL, CNOME DEVT</p>
+        </section>
+        <section id="recommanded_products">
+          <h2>Recommanded Products</h2>
+          <div>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
                 </div>
               </div>
-              <p class="msg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                odio tortor, scelerisque lobortis aliquet blandit ullamcorper.
-              </p>
-            </div>
-            <div class="comment">
-              <div>
-                <span class="profile"></span>
-                <div>
-                  <h5>USER NAME</h5>
-                  <p class="profile_post">Size XL, CNOME DEVT</p>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
                 </div>
               </div>
-              <p class="msg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                odio tortor, scelerisque lobortis aliquet blandit ullamcorper.
-              </p>
-            </div>
-            <div class="comment">
-              <div>
-                <span class="profile"></span>
-                <div>
-                  <h5>USER NAME</h5>
-                  <p class="profile_post">Size XL, CNOME DEVT</p>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
                 </div>
               </div>
-              <p class="msg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                odio tortor, scelerisque lobortis aliquet blandit ullamcorper.
-              </p>
-            </div>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
+              </div>
+            </figure>
           </div>
-        </div>
-      </section>
-      <section id="recommanded_products">
-        <h2>Recommanded Products</h2>
-        <div>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
-              </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
-              </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
-              </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
-              </div>
-            </div>
-          </figure>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <footer>
       <ul>
         <li><a href="#">About</a></li>
@@ -348,5 +431,12 @@
       </ul>
       <p>Copyright&copy; 2023</p>
     </footer>
+
+    <script>
+      const searchInput = document.getElementById("search");
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") window.location.href = "./products.html";
+      });
+    </script>
   </body>
 </html>

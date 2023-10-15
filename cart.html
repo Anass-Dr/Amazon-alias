@@ -14,143 +14,150 @@
     <title>Amazon by Aziz</title>
   </head>
   <body>
-    <nav>
-      <div id="brand">
-        <img src="./assets/Amazon.png" alt="amazon_icon" />
-      </div>
-      <div id="search">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Cherchez un produit, une marque ou catégorie..."
-        />
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">Sign In</a>
-        </li>
-        <hr />
-        <li>
-          <a href="#">Create account</a>
-        </li>
-        <li id="nav_country">
-          <img src="./assets/Morocco.png" alt="morocco_logo" />
-          <span>MAR</span>
-        </li>
-        <li id="nav_cart">
-          <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
-          <span>5</span>
-        </li>
-      </ul>
-    </nav>
-    <main id="cart_main">
-      <section>
-        <div id="section_head">
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Select All Items
-          </label>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <div id="brand">
+          <a href="./index.html">
+            <img src="./assets/Amazon.png" alt="amazon_icon" />
+          </a>
         </div>
-        <div class="products">
-          <div class="product_details">
+        <div id="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Cherchez un produit, une marque ou catégorie..."
+          />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#">Create account</a>
+          </li>
+          <li id="nav_country">
+            <img src="./assets/Morocco.png" alt="morocco_logo" />
+            <span>MAR</span>
+          </li>
+          <li id="nav_cart">
+            <a href="./cart.html">
+              <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
+              <span>5</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main id="cart_main">
+        <section>
+          <div id="section_head">
             <label class="checkbox">
               <input type="checkbox" />
               <span class="checkmark"></span>
+              Select All Items
             </label>
-            <div class="product_img"></div>
-            <div class="product_info">
-              <h3>Product Name</h3>
-              <p class="product_info-p">Selected Vue le 31</p>
-              <span class="price">$1900</span>
-              <span class="shipping">Shipping: $5</span>
-            </div>
-            <div class="likes">
-              <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>10</span>
+          </div>
+          <div class="products">
+            <div class="product_details">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="product_img"></div>
+              <div class="product_info">
+                <h3>Product Name</h3>
+                <p class="product_info-p">Selected Vue le 31</p>
+                <span class="price">$1900</span>
+                <span class="shipping">Shipping: $5</span>
               </div>
-              <div class="shipping_quantity">
-                <span><b>-</b></span>
-                <p>1</p>
-                <span><b>+</b></span>
+              <div class="likes">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <span>10</span>
+                </div>
+                <div class="shipping_quantity">
+                  <span><b>-</b></span>
+                  <p>1</p>
+                  <span><b>+</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="product_details">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="product_img"></div>
+              <div class="product_info">
+                <h3>Product Name</h3>
+                <p class="product_info-p">Selected Vue le 31</p>
+                <span class="price">$1900</span>
+                <span class="shipping">Shipping: $5</span>
+              </div>
+              <div class="likes">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <span>10</span>
+                </div>
+                <div class="shipping_quantity">
+                  <span><b>-</b></span>
+                  <p>1</p>
+                  <span><b>+</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="product_details">
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="product_img"></div>
+              <div class="product_info">
+                <h3>Product Name</h3>
+                <p class="product_info-p">Selected Vue le 31</p>
+                <span class="price">$1900</span>
+                <span class="shipping">Shipping: $5</span>
+              </div>
+              <div class="likes">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <span>10</span>
+                </div>
+                <div class="shipping_quantity">
+                  <span><b>-</b></span>
+                  <p>1</p>
+                  <span><b>+</b></span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="product_details">
-            <label class="checkbox">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <div class="product_img"></div>
-            <div class="product_info">
-              <h3>Product Name</h3>
-              <p class="product_info-p">Selected Vue le 31</p>
-              <span class="price">$1900</span>
-              <span class="shipping">Shipping: $5</span>
+        </section>
+        <aside>
+          <div id="summary">
+            <h3>Summary</h3>
+            <div>
+              <span>Delivery</span>
+              <span>09/10/2023</span>
             </div>
-            <div class="likes">
-              <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>10</span>
-              </div>
-              <div class="shipping_quantity">
-                <span><b>-</b></span>
-                <p>1</p>
-                <span><b>+</b></span>
-              </div>
+            <div>
+              <span>Shipping Fee</span>
+              <span>v5 $3 + $39</span>
             </div>
-          </div>
-          <div class="product_details">
-            <label class="checkbox">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <div class="product_img"></div>
-            <div class="product_info">
-              <h3>Product Name</h3>
-              <p class="product_info-p">Selected Vue le 31</p>
-              <span class="price">$1900</span>
-              <span class="shipping">Shipping: $5</span>
+            <div>
+              <span>Total</span>
+              <span>US 56405</span>
             </div>
-            <div class="likes">
-              <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>10</span>
-              </div>
-              <div class="shipping_quantity">
-                <span><b>-</b></span>
-                <p>1</p>
-                <span><b>+</b></span>
-              </div>
-            </div>
+            <button class="btn">checkout</button>
           </div>
-        </div>
-      </section>
-      <aside>
-        <div id="summary">
-          <h3>Summary</h3>
-          <div>
-            <span>Delivery</span>
-            <span>09/10/2023</span>
+          <div id="payment">
+            <h3>Payment Methods</h3>
+            <p>Payment Espece</p>
           </div>
-          <div>
-            <span>Shipping Fee</span>
-            <span>v5 $3 + $39</span>
-          </div>
-          <div>
-            <span>Total</span>
-            <span>US 56405</span>
-          </div>
-          <button class="btn">checkout</button>
-        </div>
-        <div id="payment">
-          <h3>Payment Methods</h3>
-          <p>Payment Espece</p>
-        </div>
-      </aside>
-    </main>
+        </aside>
+      </main>
+    </div>
     <footer>
       <ul>
         <li><a href="#">About</a></li>
@@ -159,5 +166,12 @@
       </ul>
       <p>Copyright&copy; 2023</p>
     </footer>
+
+    <script>
+      const searchInput = document.getElementById("search");
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") window.location.href = "./products.html";
+      });
+    </script>
   </body>
 </html>

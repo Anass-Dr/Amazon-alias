@@ -14,411 +14,470 @@
     <title>Amazon by Aziz</title>
   </head>
   <body>
-    <nav>
-      <div id="brand">
-        <img src="./assets/Amazon.png" alt="amazon_icon" />
-      </div>
-      <div id="search">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Cherchez un produit, une marque ou catégorie..."
-        />
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">Sign In</a>
-        </li>
-        <hr />
-        <li>
-          <a href="#">Create account</a>
-        </li>
-        <li id="nav_country">
-          <img src="./assets/Morocco.png" alt="morocco_logo" />
-          <span>MAR</span>
-        </li>
-        <li id="nav_cart">
-          <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
-          <span>5</span>
-        </li>
-      </ul>
-    </nav>
-    <main id="products_main">
-      <aside id="products_filter">
-        <h3>Marques</h3>
-        <ul>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Redragon
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Keychron
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            ASUS
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Logitech
-          </label>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <div id="brand">
+          <a href="./index.html">
+            <img src="./assets/Amazon.png" alt="amazon_icon" />
+          </a>
+        </div>
+        <div id="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Cherchez un produit, une marque ou catégorie..."
+          />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#">Create account</a>
+          </li>
+          <li id="nav_country">
+            <img src="./assets/Morocco.png" alt="morocco_logo" />
+            <span>MAR</span>
+          </li>
+          <li id="nav_cart">
+            <a href="./cart.html">
+              <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
+              <span>5</span>
+            </a>
+          </li>
         </ul>
-        <h3>Shipping</h3>
-        <ul>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Redragon
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Redragon
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Redragon
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-            Redragon
-          </label>
-        </ul>
-        <h3>Price</h3>
-        <input type="range" />
-      </aside>
-      <section>
-        <div class="search_header">
-          <p class="search_results_p">
-            1 - 12 cover 5000 results for <span>"keyboard"</span>
-          </p>
-          <div>
-            <label for="">sort by:</label>
-            <select class="products_filter_select">
-              <option value="most-reviewed">most reviewed</option>
-              <option value="best-sellers">best sellers</option>
-              <option value="newest">newest</option>
-            </select>
+      </nav>
+      <main id="products_main">
+        <aside id="products_filter">
+          <h3>Marques</h3>
+          <ul>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Redragon
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Keychron
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              ASUS
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Logitech
+            </label>
+          </ul>
+          <h3>Shipping</h3>
+          <ul>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Redragon
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Redragon
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Redragon
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              Redragon
+            </label>
+          </ul>
+          <h3>Price</h3>
+          <div class="ranges">
+            <input type="range" min="0" max="600" step="10" value="30" />
+            <input type="range" min="0" max="600" step="10" value="500" />
           </div>
-        </div>
-        <div class="radio_options">
-          <label>
-            free shopping
-            <input type="radio" name="free shopping" />
-          </label>
-          <label>
-            free shopping
-            <input type="radio" name="free shopping" />
-          </label>
-          <label>
-            free shopping
-            <input type="radio" name="free shopping" />
-          </label>
-          <label>Clear all filters</label>
-        </div>
-        <div id="products">
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
+          <div class="range_values">
+            <span>30$</span>
+            <span>500$</span>
+          </div>
+        </aside>
+        <section>
+          <div class="filters_flex">
+            <div class="search_header">
+              <p class="search_results_p">
+                1 - 12 cover 5000 results for <span>"keyboard"</span>
               </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+              <div>
+                <label for="">sort by:</label>
+                <select class="products_filter_select">
+                  <option value="most-reviewed">most reviewed</option>
+                  <option value="best-sellers">best sellers</option>
+                  <option value="newest">newest</option>
+                </select>
               </div>
             </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
-              </div>
+            <div class="radio_options">
+              <label>
+                free shopping
+                <input type="radio" name="shopping-option" />
+              </label>
+              <label>
+                free shopping
+                <input type="radio" name="shopping-option" />
+              </label>
+              <label>
+                free shopping
+                <input type="radio" name="shopping-option" />
+              </label>
+              <label>
+                Clear all filters
+                <input type="radio" name="shopping-option" />
+              </label>
+              <span class="all_filters"
+                >filters
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
             </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+          </div>
+          <div id="products">
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-          <figure class="product_card">
-            <div class="product_card_img"></div>
-            <div class="product_card_info">
-              <h4>
-                <span class="product_card_new-price">$1200</span>
-                <span class="product_card_old-price">$1450</span>
-              </h4>
-              <p class="product_card_desc">Hello world, hello aziz, hello me</p>
-              <p class="product_card_desc">
-                Hello world, hello aziz, hello me, hello
-              </p>
-              <div class="product_card_footer">
-                <span class="product_card_star">
-                  <img src="./assets/Star.png" alt="star_icon" />
-                  5.0</span
-                >
-                <hr />
-                <span class="product_card_sold">Sold 120</span>
-                <span class="product_card_mall-icon"
-                  ><img src="./assets/Shopping Mall.png" alt="mall_icon"
-                /></span>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
               </div>
-            </div>
-          </figure>
-        </div>
-        <div class="dots">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-      </section>
-    </main>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
+              </div>
+            </figure>
+            <figure class="product_card">
+              <a href="./product_details.html"></a>
+              <div class="product_card_img"></div>
+              <div class="product_card_info">
+                <h4>
+                  <span class="product_card_new-price">$1200</span>
+                  <span class="product_card_old-price">$1450</span>
+                </h4>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me
+                </p>
+                <p class="product_card_desc">
+                  Hello world, hello aziz, hello me, hello
+                </p>
+                <div class="product_card_footer">
+                  <span class="product_card_star">
+                    <img src="./assets/Star.png" alt="star_icon" />
+                    5.0</span
+                  >
+                  <hr />
+                  <span class="product_card_sold">Sold 120</span>
+                  <span class="product_card_mall-icon"
+                    ><img src="./assets/Shopping Mall.png" alt="mall_icon"
+                  /></span>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="dots">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer>
       <ul>
         <li><a href="#">About</a></li>
@@ -427,5 +486,12 @@
       </ul>
       <p>Copyright&copy; 2023</p>
     </footer>
+
+    <script>
+      const searchInput = document.getElementById("search");
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") window.location.href = "./products.html";
+      });
+    </script>
   </body>
 </html>
