@@ -123,10 +123,11 @@ nav i {
   color: var(--slate-700);
 }
 #nav_country,
-#nav_cart a {
+#nav_cart {
   display: flex;
   align-items: center;
   color: var(--slate-400);
+  cursor: pointer;
 }
 #nav_country {
   margin: 0 10px;
@@ -973,6 +974,80 @@ input[type="checkbox"]:checked ~ .checkmark {
   font-weight: 600;
 }
 
+/* Contact Page Styles : */
+#contact_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#contact_main aside {
+  background: url("./assets/contact_img.png") center no-repeat;
+  background-size: cover;
+}
+#contact_main section {
+  padding: 50px 30px 50px 10px;
+}
+#contact_main h5 {
+  font-size: 22px;
+  color: var(--slate-800);
+  margin-bottom: 1.5rem;
+}
+.contact_intro_p {
+  color: var(--slate-600);
+  margin-bottom: 1rem;
+}
+#contact_main .info {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#contact_main .info > div {
+  flex: 1;
+}
+#contact_main h6 {
+  font-size: 16px;
+  color: var(--slate-700);
+  margin-bottom: 0.5rem;
+}
+#contact_main .info_p {
+  color: var(--slate-800);
+}
+#contact_main form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact_main .form_control {
+  margin-top: 1rem;
+  position: relative;
+}
+#contact_main .form_control span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all ease 0.3s;
+}
+#contact_main .form_control input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 0;
+  border-bottom: 1px solid var(--slate-400);
+  outline: 0;
+}
+#contact_main .form_control input:focus ~ span,
+#contact_main .form_control input:valid ~ span {
+  color: var(--blue-400);
+  top: -20px;
+  transform: translate(0);
+}
+#contact_main textarea {
+  padding: 8px;
+  margin-top: 1rem;
+}
+
+#contact_footer {
+  margin-top: 0;
+}
+
 /* Footer Styles : */
 footer {
   display: flex;
@@ -995,6 +1070,23 @@ footer ul a {
 footer p {
   font-size: 17.5px;
   color: var(--slate-400);
+}
+
+.hidden {
+  display: none;
+}
+.overflow_hidden {
+  overflow: hidden;
+}
+.overflow_hidden::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.remove {
+  left: 200% !important;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1074px) {

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Amazon by Aziz</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-bars-staggered"></i>
+        <div id="brand">
+          <a href="./index.html">
+            <img src="./assets/Amazon.png" alt="amazon_icon" />
+          </a>
+        </div>
+        <div id="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Cherchez un produit, une marque ou catégorie..."
+          />
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Sign In</a>
+          </li>
+          <hr />
+          <li>
+            <a href="#">Create account</a>
+          </li>
+          <li id="nav_country">
+            <img src="./assets/Morocco.png" alt="morocco_logo" />
+            <span>MAR</span>
+          </li>
+          <li id="nav_cart" onclick="sideControl()">
+            <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
+            <span>3</span>
+          </li>
+        </ul>
+      </nav>
+      <main id="contact_main">
+        <section>
+          <h5>Contact Us</h5>
+          <p class="contact_intro_p">
+            We're open for any suggestion or just to have a chat
+          </p>
+          <div class="info">
+            <div>
+              <h6>Address:</h6>
+              <p class="info_p">
+                198 West 21th Street, Suite 721 New York NY 10016
+              </p>
+            </div>
+            <div>
+              <h6>Email:</h6>
+              <p class="info_p">info@amazon.com</p>
+            </div>
+            <div>
+              <h6>Phone:</h6>
+              <p class="info_p">+212-00000000</p>
+            </div>
+          </div>
+          <form action="Post">
+            <label class="form_control">
+              <input type="text" name="name" id="name" required />
+              <span>Name</span>
+            </label>
+            <label class="form_control">
+              <input type="email" name="email" id="email" required />
+              <span>Email</span>
+            </label>
+            <label class="form_control">
+              <input
+                type="tel"
+                pattern="[0-9]{10}"
+                name="phone"
+                id="phone"
+                required
+              />
+              <span>Phone</span>
+            </label>
+            <label class="form_control">
+              <input type="text" name="subject" id="subject" required />
+              <span>Subject</span>
+            </label>
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Create a message here ..."
+            ></textarea>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer id="contact_footer">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <p>Copyright&copy; 2023</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

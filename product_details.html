@@ -42,11 +42,9 @@
             <img src="./assets/Morocco.png" alt="morocco_logo" />
             <span>MAR</span>
           </li>
-          <li id="nav_cart">
-            <a href="./cart.html">
-              <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
-              <span>5</span>
-            </a>
+          <li id="nav_cart" onclick="sideControl()">
+            <img src="./assets/Shopping Cart.png" alt="shopping_icon" />
+            <span>3</span>
           </li>
         </ul>
       </nav>
@@ -432,11 +430,6 @@
       <p>Copyright&copy; 2023</p>
     </footer>
 
-    <script>
-      const searchInput = document.getElementById("search");
-      searchInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") window.location.href = "./products.html";
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
