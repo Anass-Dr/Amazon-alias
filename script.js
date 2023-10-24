@@ -218,3 +218,19 @@ const controlNavbar = () => {
   document.querySelector(".navbar").classList.toggle("hide_nav");
   document.body.classList.toggle("overflow_hidden");
 };
+
+// #- Form Validator :
+const formValidator = (e) => {
+  document
+    .querySelectorAll(".form_control small")
+    .forEach((item) => item.classList.add("hidden"));
+  const inputs = document.querySelectorAll(".form_control input");
+  e.preventDefault();
+  inputs.forEach((input, indx) => {
+    if (input.value.length == 0) error_msgs[indx].classList.remove("hidden");
+  });
+  if (!inputs[1].value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/))
+    inputs[1].nextElementSibling.classList.remove("hidden");
+  if (!inputs[2].value.match(/[0-9]{10}/))
+    inputs[2].nextElementSibling.classList.remove("hidden");
+};

@@ -107,23 +107,24 @@
               <p class="info_p">+212-00000000</p>
             </div>
           </div>
-          <form action="Post">
+          <form onsubmit="formValidator(event)">
             <label class="form_control">
               <input type="text" name="name" id="name" required />
+              <small class="input_error hidden">This field is required</small>
               <span>Name</span>
             </label>
             <label class="form_control">
               <input type="email" name="email" id="email" required />
+              <small class="input_error hidden"
+                >Please enter a valid email</small
+              >
               <span>Email</span>
             </label>
             <label class="form_control">
-              <input
-                type="tel"
-                pattern="[0-9]{10}"
-                name="phone"
-                id="phone"
-                required
-              />
+              <input type="text" name="phone" id="phone" required />
+              <small class="input_error hidden"
+                >Please enter a valid phone number</small
+              >
               <span>Phone</span>
             </label>
             <label class="form_control">
@@ -137,6 +138,7 @@
               rows="10"
               placeholder="Create a message here ..."
             ></textarea>
+            <button type="submit">Submit</button>
           </form>
         </section>
         <div id="contact_img"></div>

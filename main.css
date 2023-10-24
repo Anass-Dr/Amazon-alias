@@ -1264,6 +1264,12 @@ input[type="checkbox"]:checked ~ .checkmark {
   top: -20px;
   transform: translate(0);
 }
+#contact_main .form_control small {
+  position: absolute;
+  top: 110%;
+  left: 10px;
+  color: var(--red-400);
+}
 #contact_main textarea {
   padding: 8px;
   margin-top: 1rem;
@@ -1337,7 +1343,8 @@ footer p {
   }
   .nav-links li:first-child,
   .nav-links hr,
-  .nav-links li:nth-child(3) {
+  .nav-links li:nth-child(3),
+  .nav-links li:nth-child(5) {
     display: none;
   }
   .nav-links li {
