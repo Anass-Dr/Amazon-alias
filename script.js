@@ -210,6 +210,11 @@ function loadCart() {
 }
 
 // #- Show / Hide Categories list :
-const controlDropDown = () => {
+const controlDropDown = () =>
   document.getElementById("categories_list").classList.toggle("hide_drop");
+
+// #- Show / Hide Navbar side :
+const controlNavbar = () => {
+  document.querySelector(".navbar").classList.toggle("hide_nav");
+  document.body.classList.toggle("overflow_hidden");
 };

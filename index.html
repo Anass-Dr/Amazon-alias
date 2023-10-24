@@ -15,7 +15,20 @@
   </head>
   <body>
     <div id="dark_layer" class="hidden"></div>
-    <aside></aside>
+    <aside class="navbar hide_nav">
+      <ul>
+        <li>Menu<i onclick="controlNavbar()" class="fa-solid fa-xmark"></i></li>
+        <li>
+          <a href="#">Sign-in</a>
+        </li>
+        <li>
+          <a href="#">Create Account</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </aside>
     <aside class="cart_sidebar hidden">
       <span class="side_close" onclick="sideControl()">
         <i class="fa-solid fa-xmark"></i>
@@ -36,7 +49,7 @@
     </aside>
     <div class="container">
       <nav>
-        <i class="fa-solid fa-bars-staggered"></i>
+        <i onclick="controlNavbar()" class="fa-solid fa-bars-staggered"></i>
         <div id="brand">
           <a href="./index.html">
             <img src="./assets/Amazon.png" alt="amazon_icon" />
