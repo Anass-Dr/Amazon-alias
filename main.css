@@ -1437,6 +1437,10 @@ footer p {
   header label {
     display: flex;
   }
+  header #categories_list {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
   .hide_drop {
     max-height: 0 !important;
   }
