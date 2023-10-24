@@ -300,9 +300,19 @@ header {
   grid-gap: 1.2rem;
   padding: 20px 0;
 }
-header #categories {
+header label {
+  display: none;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid var(--slate-200);
+  cursor: pointer;
+}
+header #categories_list {
   border: 1px solid var(--slate-200);
   border-radius: 6px;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  max-height: 700px;
 }
 header #categories li {
   color: var(--slate-400);
@@ -1424,8 +1434,11 @@ footer p {
   header {
     grid-template-columns: 1fr;
   }
-  #categories {
-    order: 1;
+  header label {
+    display: flex;
+  }
+  .hide_drop {
+    max-height: 0 !important;
   }
   #header_slide {
     grid-area: auto;

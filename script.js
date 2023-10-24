@@ -208,3 +208,8 @@ function loadCart() {
       0
     );
 }
+
+// #- Show / Hide Categories list :
+const controlDropDown = () => {
+  document.getElementById("categories_list").classList.toggle("hide_drop");
+};
