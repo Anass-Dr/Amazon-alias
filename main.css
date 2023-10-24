@@ -1202,7 +1202,7 @@ input[type="checkbox"]:checked ~ .checkmark {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#contact_main aside {
+#contact_main #contact_img {
   background: url("./assets/contact_img.png") center no-repeat;
   background-size: cover;
 }
@@ -1220,6 +1220,7 @@ input[type="checkbox"]:checked ~ .checkmark {
 }
 #contact_main .info {
   display: flex;
+  gap: 8px;
   margin-bottom: 1rem;
 }
 #contact_main .info > div {
@@ -1251,6 +1252,7 @@ input[type="checkbox"]:checked ~ .checkmark {
 }
 #contact_main .form_control input {
   width: 100%;
+  /* max-width: 500px; */
   padding: 6px 10px;
   border: 0;
   border-bottom: 1px solid var(--slate-400);
@@ -1420,6 +1422,13 @@ footer p {
     width: 25px;
     height: 25px;
   }
+  /* PAGE 4 STYLES : */
+  #contact_main {
+    grid-template-columns: auto;
+  }
+  #contact_main section {
+    padding-inline: 0px;
+  }
 }
 @media screen and (max-width: 820px) {
   /* PAGE 3 STYLES : */
@@ -1515,6 +1524,10 @@ footer p {
   .product_card_mall-icon {
     width: 28px;
     height: 28px;
+  }
+
+  #contact_main .info_p {
+    font-size: 14px;
   }
 
   footer ul {
